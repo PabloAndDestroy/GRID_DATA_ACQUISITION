@@ -4,7 +4,7 @@ import time
 import os
 from datetime import datetime
 
-def read_serial_data(port='/dev/ttyUSB0', baudrate=9600, timeout=1):
+def read_serial_data(port='/dev/ttyUSB0', baudrate=115200, timeout=1):
     try:
         ser = serial.Serial(port, baudrate, timeout=timeout)
         print(f"Listening on {port} at {baudrate} baud...")

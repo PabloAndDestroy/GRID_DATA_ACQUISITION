@@ -51,3 +51,4 @@ def read_serial_data(port='/dev/ttyUSB0', baudrate=9600, timeout=1):
 
 if __name__ == "__main__":
     read_serial_data(port='/dev/serial0')  # Cambia al puerto real si es necesario
+# escribir dsmeg | grep tty para encontrar el puerto en linux
